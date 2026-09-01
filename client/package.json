@@ -14,5 +14,8 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.63.1"
+  },
   "devDependencies": {}
 }
