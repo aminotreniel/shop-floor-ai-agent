@@ -216,11 +216,15 @@ async function runLiveAgent({ workstationId, panelCode, question }) {
     .filter((item) => item.type === "text")
     .map((item) => item.text)
     .join("\n")
-    .trim() || "The information could not be completed. Do not process the panel until verified.";
+    .trim();
+  // A tool-only final turn is valid for an LLM response. In that case, render a
+  // concise answer from the same verified records instead of showing a generic
+  // warning after a successful tool workflow.
+  const verifiedFallback = localAnswer({ panelCode, workstationId, question, toolResults }).answer;
 
   return {
     status,
-    answer: enforceSafetyFinalAnswer({ status, answer: modelAnswer, panel }),
+    answer: enforceSafetyFinalAnswer({ status, answer: modelAnswer || verifiedFallback, panel }),
     panel,
     trace: publicTrace(toolResults),
     sources: sourcesFromTrace(toolResults),
