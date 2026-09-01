@@ -1,0 +1,38 @@
+[
+  {
+    "panelCode": "P-1001",
+    "cabinetId": "CAB-101",
+    "panelName": "Left Side Panel",
+    "dimensions": "720 x 560 x 18 mm",
+    "material": "White Melamine MDF",
+    "requiredOperation": "EDGE_BANDING",
+    "nextWorkstationId": "EDGE-01"
+  },
+  {
+    "panelCode": "P-1002",
+    "cabinetId": "CAB-101",
+    "panelName": "Door Panel",
+    "dimensions": "715 x 396 x 18 mm",
+    "material": "White Melamine MDF",
+    "requiredOperation": "DRILLING",
+    "nextWorkstationId": "DRILL-01"
+  },
+  {
+    "panelCode": "P-1003",
+    "cabinetId": "CAB-102",
+    "panelName": "Base Shelf",
+    "dimensions": "564 x 450 x 18 mm",
+    "material": "Oak Veneer MDF",
+    "requiredOperation": "EDGE_BANDING",
+    "nextWorkstationId": "EDGE-01"
+  },
+  {
+    "panelCode": "P-1004",
+    "cabinetId": "CAB-103",
+    "panelName": "Drawer Front",
+    "dimensions": "180 x 600 x 18 mm",
+    "material": "Matte Black MDF",
+    "requiredOperation": "DRILLING",
+    "nextWorkstationId": "DRILL-01"
+  }
+]

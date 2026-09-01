@@ -1,0 +1,16 @@
+[
+  {
+    "workstationId": "EDGE-01",
+    "name": "Edge Banding",
+    "supportedOperations": ["EDGE_BANDING"],
+    "operatorInstruction": "Verify the panel code and edge-band only after the panel is confirmed for this station.",
+    "sopTopic": "edge banding"
+  },
+  {
+    "workstationId": "DRILL-01",
+    "name": "Drilling",
+    "supportedOperations": ["DRILLING"],
+    "operatorInstruction": "Verify the panel code and drill only after the panel is confirmed for this station.",
+    "sopTopic": "drilling"
+  }
+]

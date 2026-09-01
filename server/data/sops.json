@@ -1,0 +1,14 @@
+[
+  {
+    "id": "SOP-EDGE-01",
+    "title": "SOP - Edge Banding",
+    "keywords": ["edge", "edge banding", "band", "edge_banding"],
+    "content": "Confirm the scanned panel code matches the system record. Confirm Edge Banding is the required operation. Inspect the panel for visible damage before processing. If the panel label and system record disagree, stop processing and notify a supervisor."
+  },
+  {
+    "id": "SOP-DRILL-01",
+    "title": "SOP - Drilling",
+    "keywords": ["drill", "drilling", "hole"],
+    "content": "Confirm the scanned panel code matches the system record. Confirm Drilling is the required operation. If the panel label and system record disagree, stop processing and notify a supervisor."
+  }
+]
