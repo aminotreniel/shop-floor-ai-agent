@@ -51,4 +51,8 @@ app.post("/api/agent", async (request, response) => {
   }
 });
 
-app.listen(port, () => console.log(`Shop-Floor API running at http://localhost:${port}`));
+if (!process.env.VERCEL) {
+  app.listen(port, () => console.log(`Shop-Floor API running at http://localhost:${port}`));
+}
+
+export default app;

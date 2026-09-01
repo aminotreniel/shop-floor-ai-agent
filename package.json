@@ -1,11 +1,21 @@
 {
   "name": "shop-floor-ai-agent",
   "private": true,
+  "type": "module",
+  "workspaces": [
+    "client"
+  ],
   "scripts": {
-    "install:all": "npm install --prefix server && npm install --prefix client",
+    "install:all": "npm install && npm install --prefix server",
     "dev:server": "npm run dev --prefix server",
     "dev:client": "npm run dev --prefix client",
     "test": "npm test --prefix server",
-    "build": "npm run build --prefix client"
+    "build": "npm run build --workspace client"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0"
   }
 }
