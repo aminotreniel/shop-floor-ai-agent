@@ -1,6 +1,6 @@
 # Shop-Floor AI Agent
 
-Demo URL: Local demo (`http://localhost:5173`)
+Demo URL: https://shop-floor-ai-agent.vercel.app
 
 Repository: https://github.com/aminotreniel/shop-floor-ai-agent
 
