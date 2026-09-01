@@ -1,15 +1,7 @@
-import fs from "node:fs";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+import panels from "../data/panels.json" with { type: "json" };
+import workstations from "../data/workstations.json" with { type: "json" };
+import sops from "../data/sops.json" with { type: "json" };
 import { addEvent } from "./store.js";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const dataDirectory = path.resolve(__dirname, "../data");
-const readJson = (filename) => JSON.parse(fs.readFileSync(path.join(dataDirectory, filename), "utf8"));
-
-const panels = readJson("panels.json");
-const workstations = readJson("workstations.json");
-const sops = readJson("sops.json");
 
 function normalized(value) {
   return typeof value === "string" ? value.trim().toUpperCase() : "";
